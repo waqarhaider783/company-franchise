@@ -1,0 +1,142 @@
+/** Sass-Ready media queries Here there are some presets of useful media queries breakpoints for various devices Usage: @media variable-name { } and it will compile to: @media screen width and height { }  */
+#franchise-details .postbox-header {
+    padding: 25px 0 10px;
+}
+#franchise-details .postbox-header h2 {
+    font-size: 22px;
+}
+#franchise-details h3 {
+    padding: 20px 0 0px;
+    border-top: 1px solid #ccc;
+    margin-top: 40px;
+}
+.field-wrap-main {
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;
+}
+.field-wrap-main .field-label {
+    margin-right: 30px;
+    width: 15%;
+    font-weight: 500;
+}
+.field-wrap-main .field-wrap {
+    width: 85%;
+}
+.field-wrap-main .field-wrap input {
+    width: 100%;
+}
+.hide{display: none !important;}
+/*Side ribbons Css*/
+.button_right {
+    display: flex;
+    justify-content: flex-end;
+}
+.button_left {
+    display: flex;
+    justify-content: flex-start;
+}
+.button_left span {
+    margin-right: 10px !important;
+}
+.button_right span {
+    margin-left: 10px !important;
+}
+.add_row_main {}
+
+.add_row_main .add_row {
+    display: flex;
+    align-items: center;
+    margin: 0 -10px;
+}
+
+.add_row_main .add_row .field-wrap-main {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    margin: 0 10px 15px;
+}
+
+.add_row_main .add_row .field-wrap-main .field-label {
+    width: auto;
+    margin-bottom: 8px;
+}
+
+.add_row_main .add_row .field-wrap-main .field-wrap {
+    width: 100%;
+}
+/*
+Plgun settings CSS
+*/
+.franchise_plugin_settings_form{}
+.franchise_plugin_settings_form tbody {
+    display: flex;
+    flex-wrap: wrap;
+}
+.franchise_plugin_settings_form tbody tr {
+    width: 100%;
+}
+.franchise_plugin_settings_form tbody tr.toggleRibbon {
+    width: 100%;
+}
+.franchise_plugin_settings_form tbody tr.sideRibbonField {
+    width: 33.33%;
+    align-items: center;
+}
+.franchise_plugin_settings_form tbody tr.sideRibbonField.show{
+    display: inline-flex;
+}
+.franchise_plugin_settings_form .sideRibbonField th, .franchise_plugin_settings_form .sideRibbonField td {
+    padding: 0;
+}
+.franchise_plugin_settings_form .sideRibbonField td img{width: 25px !important;}
+.services_items{}
+.services_items .add_row .field-wrap-main:nth-child(2) .field-wrap, .services_items .add_row .field-wrap-main:nth-child(2) .field-wrap input, .services_items .add_row .field-wrap-main{width: auto;}
+.services_items .add_row .field-wrap-main:nth-child(2){width: 4%;}
+.services_items .add_row .field-wrap-main:nth-child(3){width: 10%;}
+.services_items .add_row .field-wrap-main:nth-child(5), .services_items .add_row .field-wrap-main:nth-child(4){width: 42%;}
+
+/*
+Settings page ribbon Css
+*/
+.franchise_plugin_settings_form tbody tr.sideRibbonField{display: none;}
+tr.toggleRibbon::after {
+    content: "+";
+    position: absolute;
+    top: 48%;
+    transform: translate(0, -50%);
+    font-size: 24px;
+    left: 0;
+}
+tr.toggleRibbon h2 {
+    padding-left: 25px;
+}
+tr.toggleRibbon.active::after{
+    content:"-";
+}
+tr.toggleRibbon {
+    position: relative;
+    cursor: pointer;
+}
+.add_row th, .add_row td{padding:0px;}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) { /* Styles */ }
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) { /* Styles */ }
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) { /* Styles */ }
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) { /* Styles */ }
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) { /* Styles */ }
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) { /* Styles */ }
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) { /* Styles */ }
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) { /* Styles */ }
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) { /* Styles */ }
+
+/*# sourceMappingURL=admin-style.css.map */
